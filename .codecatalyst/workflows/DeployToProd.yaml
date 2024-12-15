@@ -28,8 +28,7 @@ Actions:
         - Run: ./.codecatalyst/scripts/sst_deploy.sh
       Container:
         Registry: ECR
-        Image: 600627328431.dkr.ecr.me-south-1.amazonaws.com/ProjectsMA/moe-questions-bankUP
-        
+        Image: 600627328431.dkr.ecr.us-east-1.amazonaws.com/cdk-hnb659fds-container-assets-600627328431-us-east-1
     Compute:
       Type: EC2
     Environment:
