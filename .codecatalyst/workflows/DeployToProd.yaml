@@ -27,8 +27,9 @@ Actions:
         - Run: chmod +x ./.codecatalyst/scripts/sst_deploy.sh
         - Run: ./.codecatalyst/scripts/sst_deploy.sh
       Container:
-        Image: 600627328431.dkr.ecr.me-south-1.amazonaws.com/ProjectsMA/moe-questions-bankUP
         Registry: ECR
+        Image: 600627328431.dkr.ecr.me-south-1.amazonaws.com/ProjectsMA/moe-questions-bankUP
+        
     Compute:
       Type: EC2
     Environment:
