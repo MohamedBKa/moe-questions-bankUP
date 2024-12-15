@@ -31,8 +31,8 @@ Actions:
         - Run: chmod +x ./.codecatalyst/scripts/sst_deploy.sh
         - Run: ./.codecatalyst/scripts/sst_deploy.sh
       Container:
-        Registry: CODECATALYST
-        Image: CodeCatalystLinux_x86_64:2022_11
+        Image: 600627328431.dkr.ecr.us-west-2.amazonaws.com/codecatalyst-support:amazonlinux23withgit-1.2.0-7
+        Registry: ECR
     Compute:
       Type: EC2
     Environment:
