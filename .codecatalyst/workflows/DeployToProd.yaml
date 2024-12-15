@@ -21,7 +21,7 @@ Actions:
     Configuration:
       # Required - Steps are sequential instructions that run shell commands
       Steps:
-        - Run: curl -fsSL https://deb.nodesource.com/setup_18.x | bash-
+        - Run: curl -fsSL https://deb.nodesource.com/setup_18.x | bash
         - Run: apt-get install -y nodejs
         - Run: node -v
         - Run: chmod +x ./.codecatalyst/scripts/sst_deploy.sh
