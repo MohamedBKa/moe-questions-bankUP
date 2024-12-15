@@ -20,7 +20,7 @@ Actions:
     Outputs:
       # Optional; Automatically discover reports for popular test frameworks
       AutoDiscoverReports:
-        Enabled: true
+        Enabled: False
         # Use as prefix for the report files
         ReportNamePrefix: rpt
     # Defines the action's properties.
