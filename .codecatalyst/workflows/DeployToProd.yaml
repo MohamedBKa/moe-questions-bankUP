@@ -31,7 +31,7 @@ Actions:
         - Run: ./.codecatalyst/scripts/sst_deploy.sh
       Container:
         Registry: CODECATALYST
-        Image: CodeCatalystLinux_x86_64:2024_03
+        Image: CodeCatalystLinux_x86_64:2022_11
     Compute:
       Type: EC2
     Environment:
