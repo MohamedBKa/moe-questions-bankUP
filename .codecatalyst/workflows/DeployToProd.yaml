@@ -21,14 +21,14 @@ Actions:
     Configuration:
       # Required - Steps are sequential instructions that run shell commands
       Steps:
-        - Run: curl -fsSL https://deb.nodesource.com/setup_18.x | bash
-        - Run: apt-get install -y nodejs
-        - Run: node -v
+        #- Run: node -v
+        - Run: mkdir -p ./reports
+        - Run: echo '<testsuites></testsuites>' > ./reports/test-report.xml
         - Run: chmod +x ./.codecatalyst/scripts/sst_deploy.sh
         - Run: ./.codecatalyst/scripts/sst_deploy.sh
       Container:
-        Registry: CODECATALYST
-        Image: CodeCatalystLinux_x86_64:2022_11
+        Registry: ECR
+        Image: node:18
     Compute:
       Type: EC2
     Environment:
@@ -36,5 +36,3 @@ Actions:
         - Role: CodeCatalystWorkflowDevelopmentRole-iGA_Projects
           Name: "600627328431"
       Name: Prod
-    Packages:
-      ExportAuthorizationToken: true
