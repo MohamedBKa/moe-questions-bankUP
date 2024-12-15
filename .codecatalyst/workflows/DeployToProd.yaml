@@ -17,12 +17,12 @@ Actions:
       # Optional
       Sources:
         - WorkflowSource # This specifies that the action requires this Workflow as a source
-    Outputs:
+   # Outputs:
       # Optional; Automatically discover reports for popular test frameworks
-      AutoDiscoverReports:
-        Enabled: False
+     # AutoDiscoverReports:
+       # Enabled: False
         # Use as prefix for the report files
-        ReportNamePrefix: rpt
+       # ReportNamePrefix: rpt
     # Defines the action's properties.
     Configuration:
       # Required - Steps are sequential instructions that run shell commands
